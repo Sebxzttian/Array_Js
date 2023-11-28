@@ -88,3 +88,22 @@ const frutasu = ["plátano", "fresa", "naranja"]
 frutasu.unshift("manzana")
 
 document.write("El array de frutas agregando una al inicio es: "+frutasu+"<br>")
+
+//CONCATENAR ARRAYS
+
+document.write("<h3>CONCATENAR ARRAYS</h3>")
+
+const numberss = [1, 2, 3]
+const numberss2 = [4, 5]
+const allNumbers = numberss.concat(numberss2)
+
+document.write("El array de numbers se concatenan en una misma linea como muestra: "+allNumbers+"<br>")
+
+//CONCATENAR ARRAYS DE OTRO MODO
+
+document.write("<h3>CONCATENAR ARRAYS DE OTRO MODO</h3>")
+
+                   
+const allNumbersS = [...numberss, ...numberss2]
+
+document.write("El array de numbers se concatenan en una misma linea como muestra: "+allNumbersS+"<br>")
