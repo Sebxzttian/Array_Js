@@ -107,3 +107,24 @@ document.write("<h3>CONCATENAR ARRAYS DE OTRO MODO</h3>")
 const allNumbersS = [...numberss, ...numberss2]
 
 document.write("El array de numbers se concatenan en una misma linea como muestra: "+allNumbersS+"<br>")
+
+//EJERCICIO
+
+document.write("<h3>Ejercicio</h3>")
+
+/*En un restaurante se reciben pedidos de comida a domicilio. Vamos a escribir una función procesarPedido que recibe un pedido, que es un array de platos. Lo que debemos hacer es:
+
+El primer elemento lo sacamos del array, ya que es el nombre del cliente.
+Añadimos al principio del array la cadena de texto "bebida", ya que es una promoción que tenemos.
+Después añadimos al final del array el nombre del usuario que sacamos antes.
+Recuerda que debes devolver el array modificado:*/
+
+function procesarPedido(pedidos) {
+    const cliente = pedidos.shift();
+    pedidos.unshift("bebida");
+    pedidos.push(cliente);
+    return pedidos
+  }
+
+  const p = ["Pedro", "Café", "Huevos", "Pan"]
+  document.write("El pedido sería: "+procesarPedido(p)+"<br>")
