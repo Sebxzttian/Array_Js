@@ -31,3 +31,60 @@ document.write("<h3>LA LONGITUD DE UN ARRAY</h3>")
 const frutas = ["manzana", "pera", "plátano", "fresa"]
 document.write("El array de frutas es: "+frutas+"<br>")
 document.write("El array de frutas tiene una longitud de: "+frutas.length+"<br>")
+
+//La longitud de un array con length
+
+document.write("<h3>LA LONGITUD DE UN ARRAY CON LENGTH</h3>")
+
+const frutass = ["manzana", "pera", "plátano", "fresa"]
+frutass.length = 2
+
+document.write("El array de frutas es: "+frutass+"<br>")
+document.write("El array de frutas tiene una longitud de: "+frutass.length+"<br>")
+
+//Métodos de arrays
+
+document.write("<h3>METODOS DE ARRAYS</h3>")
+
+//.PUSH
+
+document.write("<h3>.push</h3>")
+
+const frutasp = ["plátano", "fresa"]
+frutasp.push("naranja")
+
+const frutaspp = ["plátano", "fresa"]
+document.write("El array de frutas tiene una longitud de: "+frutaspp.length+"<br>")
+
+const newLength = frutaspp.push("naranja")
+document.write("El array de frutas tiene una longitud de: "+newLength+"<br>")
+document.write("El array de frutas es: "+frutaspp+"<br>")
+
+//.POP
+
+document.write("<h3>.POP</h3>")
+
+const frutaso = ["plátano", "fresa", "naranja"]
+const ultimaFruta = frutaso.pop()
+
+document.write("El array de frutas es: "+frutaso+"<br>")
+document.write("El array de frutas ultima es: "+ultimaFruta+"<br>")
+
+//.SHIFT
+
+document.write("<h3>.SHIFT</h3>")
+
+const frutasi = ["plátano", "fresa", "naranja"]
+const primeraFruta = frutasi.shift()
+
+document.write("El array de frutas es: "+frutasi+"<br>")
+document.write("El array de frutas primera es: "+primeraFruta+"<br>")
+
+//.UNSHIFT
+
+document.write("<h3>.UNSHIFT</h3>")
+
+const frutasu = ["plátano", "fresa", "naranja"]
+frutasu.unshift("manzana")
+
+document.write("El array de frutas agregando una al inicio es: "+frutasu+"<br>")
